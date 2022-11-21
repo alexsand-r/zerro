@@ -1,0 +1,43 @@
+.sub-title h3 {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.72;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0px 0px -12px 0px;
+    text-transform: capitalize;
+}
+/* ссилка */
+
+.link {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.56;
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.5s ease 0s;
+
+}
+.zero__link::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FDC500;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.5s ease 0s;
+}
+.zero__link:hover:before {
+    width: 100%;
+}
+.zero__link a::after {
+    content: '';
+    width: 34px;
+    height: 15px;
+    background: url('../img/zero/arrow.svg') 16px center no-repeat;
+    padding: 0px 60px 0px 0px;
+    position: absolute;
+    top: 6px;
+    right: -62px;
+}
